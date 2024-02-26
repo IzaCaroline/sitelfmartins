@@ -4045,6 +4045,48 @@ input, select, textarea {
 			top: 110%;
 			transform: translateY(-50%);
 
-	  }
-	
+	 	 }
+		#header {
+		  text-align: center; /* Centraliza o conteúdo dentro do header */
+		}
+		
+		#nav {
+		  display: inline-block; /* Permite que o nav tenha largura somente do conteúdo */
+		}
+		
+		#nav ul {
+		  list-style: none;
+		  padding: 0;
+		}
+		
+		#nav ul li {
+		  display: inline;
+		}
+		
+		#nav ul li a {
+		  display: inline-block;
+		  padding: 10px 20px; /* Ajuste o espaçamento interno conforme necessário */
+		  text-decoration: none;
+		  color: #000; /* Cor do texto do menu */
+		  font-size: 16px; /* Tamanho da fonte do menu */
+		}
+		
+		#nav ul li a:hover {
+		  color: #666; /* Cor do texto do menu ao passar o mouse */
+		}
+		
+		/* Estilo para o menu toggle */
+		.menuToggle {
+		  display: none; /* Esconde o toggle em telas maiores */
+		}
+		
+		/* Estilo para o menu quando estiver aberto */
+		#menu {
+		  display: none;
+		}
+		
+		/* Estilo para o menu quando estiver aberto e a tela for pequena o suficiente para mostrar o menu */
+		#menu.active {
+		  display: block;
+		}
 	}
