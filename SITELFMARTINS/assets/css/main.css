@@ -4051,5 +4051,8 @@ input, select, textarea {
 		}	
 
 		.title-container img {
-	   	 height: 5em; /* Ajuste a altura conforme necessário */
+		    max-width: 100%; 
+		    height: auto; 
+		    margin-right: 0.5em; 
+		}
 		}
