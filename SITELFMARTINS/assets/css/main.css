@@ -4030,7 +4030,7 @@ input, select, textarea {
 	}
 	
 	.title-container img {
-	    height: 3em; /* Ajuste a altura conforme necessário */
+	    height: 5em; /* Ajuste a altura conforme necessário */
 	}
 
 	@media screen and (max-width: 948px) and (max-height: 932px) {
