@@ -4028,15 +4028,9 @@ input, select, textarea {
 	#nextBtn {
 	right: 10px;
 	}
-
-	.title-container {
-	    display: flex;
-	    align-items: center;
-	}
 	
 	.title-container img {
-	    height: 1.5em; /* Ajuste a altura conforme necessário */
-	    margin-right: 0.5em; /* Ajuste o espaçamento conforme necessário */
+	    height: 3em; /* Ajuste a altura conforme necessário */
 	}
 
 	@media screen and (max-width: 948px) and (max-height: 932px) {
