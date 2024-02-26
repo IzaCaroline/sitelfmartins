@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">MARCENARIA LF MARTINS</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>MENU</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">HOME</a></li>
+											<li><a href="dicas.html">DICAS PARA SEU MÓVEL</a></li>
+											<li><a href="galeria.html">CATALÓGO</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+				<article id="main">
+					<header>
+						<h2>NOSSO CATALÓGO</h2>
+					</header>
+					<div class="book-container">
+						<div class="book">
+								<!-- Adicione suas imagens como fundos das páginas -->
+								<img src='images/catalogo/page1.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page2.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page3.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page4.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page5.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page6.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page7.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page8.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page9.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page10.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page11.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page12.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page13.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page14.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page15.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page16.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page17.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page18.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page19.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page20.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page21.png' alt="imagemdocatalogo">
+								<img src='images/catalogo/page22.png' alt="imagemdocatalogo">
+								<!-- Adicione mais páginas aqui conforme necessário -->
+						</div>
+						<button id="prevBtn">Anterior</button>
+						<button id="nextBtn">Próximo</button>
+					</div>
+				</article>
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/lfmartinsmarcenaria" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/lfmartins_marcenaria/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+						<li><a href="https://maps.app.goo.gl/kwLutY8wCZnfEB7k7" class="icon solid fa-envelope" target="_blank"><span class="label">Google Maps</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a><li>custom: &copy;salestech</li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>			
+			<script>
+				const book = document.querySelector('.book');
+				const prevBtn = document.getElementById('prevBtn');
+				const nextBtn = document.getElementById('nextBtn');
+
+				const pages = document.querySelectorAll('.book img');
+				let currentPageIndex = 0;
+
+				function updateBook() {
+				pages.forEach((page, index) => {
+					if (index === currentPageIndex) {
+					page.style.display = 'block';
+					} else {
+					page.style.display = 'none';
+					}
+				});
+				}
+
+				prevBtn.addEventListener('click', () => {
+				currentPageIndex = Math.max(currentPageIndex - 1, 0);
+				updateBook();
+				});
+
+				nextBtn.addEventListener('click', () => {
+				currentPageIndex = Math.min(currentPageIndex + 1, pages.length - 1);
+				updateBook();
+				});
+
+				// Chamar updateBook inicialmente para mostrar apenas a primeira página
+				updateBook();
+			</script>
+
+	</body>
+</html>
